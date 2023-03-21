@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+body , h3, hr, h4{
+    margin: 0%;
+}
+
+table {
+    width: 80%;
+    margin: 0% 10% 0% 10%;
+}
+
+header {
+    background-image: linear-gradient(#4d7ea7de, #030329);
+    color: white;
+    font-family: 'Open Sans', Courier, monospace;
+}
+
+button a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.face {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 0% 10% 0% 10%;
+}
+
+.hed1 {
+    padding-top: 50px;
+    margin: 0%;
+    font-weight: bolder;
+}
+
+.hed2 {
+    padding-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+main {
+    background-color: #F0E2BB;
+}
+
+.menu {
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: white;
+}
+
+.menu button:hover {
+    background-color: #4d7ea7de;
+}
+
+#on button:hover {
+    background-color: #333333;
+}
+
+#active {
+    color: white;
+}
+
+.off {
+    background-color: #F0E2BB;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Caveat', cursive;
+    display: inline-block;
+    font-size: 25px;
+    height: 45px;
+    width: 160px;
+
+}
+
+#on {
+    background-color: #333333;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Caveat', cursive;
+    display: inline-block;
+    font-size: 25px;
+    height: 45px;
+    width: 160px;
+
+}
+
+.menu li {
+    display: inline-block;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.hero1 {
+    width: 50%;
+    font-family: 'Caveat', cursive;
+    background-color: #333333;
+    border-radius: 5%;
+}
+
+.hero1 h1 {
+    font-size: 28px;
+    margin: 0% 25px;
+    font-family: 'Open Sans', Courier, monospace;
+    color: #D49530;
+}
+
+.hero1 h2 {
+    margin: 0% 25px;
+    font-size: 28px;
+    color: #C5CCDD;
+}
+
+.hero1 h3 {
+    margin: 0% 20px;
+    color: #F6FFFF;
+    font-size: 20px;
+}
+
+.hero1 button {
+    background-color: #41549E;
+    border-radius: 10%;
+    border: none;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Open Sans', monospace;
+    height: 3em;
+}
+
+.hero1 button a {
+    color: #FBFFFF;
+}
+
+#ap {
+    padding: 15px 30px;
+
+}
+
+.hero2 {
+    width: 50%;
+    background-color: #04151F;
+    border-radius: 5%;
+}
+
+.img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+footer {
+    padding: 25px 0px 25px 0px;
+    text-align: center;
+    font-family: 'Open Sans', Courier, monospace;
+}
+
+.nav2 {
+    width: 15%;
+}
+
+.sac {
+    border-spacing: 10px;
+}
+
+.nav3 {
+    width: 19%;
+    white-space: nowrap;
+}
+
+
+
+input {
+    width: 361.683px;
+    border-radius: 5px;
+    border-color: #333333;
+}
+
+select {
+    width: 369.683px;
+    border-radius: 5px;
+    border-color: #333333;
+}
+
+textarea {
+    border-radius: 5px;
+    border-color: #333333;
+}
+
+.cor {
+    background-color: #41549E;
+    font-size: 20px;
+    width: 5rem;
+    height: 2em;
+    color: white;
+    border-radius: 10px;
+}
+
+.hr {
+    margin: 0% 10% 1% 10%;
+    color: whitesmoke;
+}
+
+td > a {
+    text-decoration: none;
+    color: #030329;
+}
+
+.m0 {
+    margin: 0%;
+}
+
+section {
+    padding-bottom: 15%;
+}
+
+.projetos {
+    width: 250px
+}

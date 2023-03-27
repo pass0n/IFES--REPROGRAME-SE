@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Questão 05</title>
+</head>
+
+<body>
+  <div class="container my-3">
+    <p><a href="index.html">Voltar ao Índice</a></p>
+    <h1 class="display-2">Questão 05</h1>
+    <p class="lead">Usando somente estilos baseados em classes do Bootstrap 5, aprimore o formulário de login da questão
+      anterior, substituindo os títulos (labels) por placeholders e adicionando complementos com ícones sugestivos nos
+      campos "Usuário (E-mail)", "Senha" e "Perfil".</p>
+    <hr>
+  </div>
+  <!-- FAZER AQUI -->
+  <div class="container">
+    <div class="col-4 mx-auto">
+      <h1 class="display-6">Login</h1>
+      <hr>
+      <form>
+        <div class="input-group">
+          <span for="mail" class="input-group-text"><i class="bi-person"></i></span>
+          <input type="email" id="mail" placeholder="Usuário (E-mail)" class="form-control">
+        </div>
+        <div class="input-group my-3">
+          <span for="senha" class="input-group-text"><i class="bi-shield-lock"></i></span>
+          <input type="password" id="senha" class="form-control" placeholder="Senha">
+        </div>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi-person-gear"></i></span>
+          <select class="form-select">
+            <option value="" hidden>Selecione um perfil...</option>
+            <option value="">Administrador</option>
+            <option value="">Gerente</option>
+            <option value="">Usuário</option>
+          </select>
+        </div>
+        <div class="form-switch my-3">
+          <input type="checkbox" id="save" class="pr-2 form-check-input">
+          <label for="save" class="form-check-label">Lembrar de mim</label>
+        </div>
+        <button type="submit" class="btn btn-dark mb-2">Entrar</button>
+        <a class="text-decoration-none d-grid" href="#">Esqueci minha senha</a>
+        <a class="text-decoration-none" href="#">Quero me cadastrar</a>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

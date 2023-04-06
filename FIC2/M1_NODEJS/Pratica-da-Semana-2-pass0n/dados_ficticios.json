@@ -1,0 +1,74 @@
+{
+  "pessoas": [
+    {
+      "nome": "William Terry",
+      "endereco": "Rua José Apolinário",
+      "nacionalidade": "Brasileiro",
+      "idade": "40",
+      "sexo": "Macho"
+    }, 
+    {
+      "nome": "Patrick French",
+      "endereco": "Avenida Rui Braga Ribeiro",
+      "nacionalidade": "Brasileiro",
+      "idade": "27",
+      "sexo": "Macho"
+    },
+    {
+      "nome": "Kimberly Weaver",
+      "endereco": "Avenida Presidente Castelo Branco",
+      "nacionalidade": "Brasileira",
+      "idade": "19",
+      "sexo": "Fêmea"
+    },
+    {
+      "nome": "Brian Clark",
+      "endereco": "Rua Irará",
+      "nacionalidade": "Brasileiro",
+      "idade": "40",
+      "sexo": "Macho"
+    },
+    {
+      "nome": "Jennifer Reynolds",
+      "endereco": "Avenida Rosa da Penha",
+      "nacionalidade": "Brasileira",
+      "idade": "33",
+      "sexo": "Fêmea"
+    },
+    {
+      "nome": "Sarah Gonzalez MD",
+      "endereco": "Rua Santa Clara",
+      "nacionalidade": "Brasileira",
+      "idade": "27",
+      "sexo": "Fêmea"
+    },
+    {
+      "nome": "Holly Norris",
+      "endereco": "Rua Presidente Lima",
+      "nacionalidade": "Brasileira",
+      "idade": "37",
+      "sexo": "Fêmea"
+    },
+    {
+      "nome": "Anthony Valdez",
+      "endereco": "Avenida Dalila Moreira Ferraço",
+      "nacionalidade": "Brasileiro",
+      "idade": "17",
+      "sexo": "Macho"
+    },
+    {
+      "nome": "Tyler Sullivan",
+      "endereco": "Rua Hermes Moreira",
+      "nacionalidade": "Brasileiro",
+      "idade": "39",
+      "sexo": "Macho"
+    },
+    {
+      "nome": "Erica Roberson",
+      "endereco": "Estrada ES-344",
+      "nacionalidade": "Brasileira",
+      "idade": "22",
+      "sexo": "Fêmea"
+    }
+  ]
+}

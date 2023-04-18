@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/static/img/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./static/js/status.js" defer></script>
+    <title>Formidable Upload</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Formidable Upload</h1>
+        </header>
+        <main>
+            <form id="upload_form" enctype="multipart/form-data">
+
+                <label id="label_up" for="input_file">enviar arquivo.</label>
+                <input type="file" name="up" id="input_file">
+
+                <img id="preview" src="#" alt="Preview" style="display:none;">
+              
+                <div class="sts_envio">
+                    <p>Status do envio: 
+                      <img id="status" src="../static/img/empty.png" alt="empty">
+                    </p>
+                </div>
+
+                <input type="button" value="Enviar" id="btn_upload">
+            </form>
+        </main>
+        <footer>
+            <p>&copy; Formidable Upload. All rights Reserved | Made by pass0n</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/loader.css">
+    <title>Email Express</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="user-area">
+            <h1>Olá! Que bom vê-lo novamente, <%= login %>!</h1>
+            <p>
+                Por favor, aguarde um momento enquanto carregamos nosso sistema.
+            </p>
+        </section>
+
+         <section class="form-area">
+                <div class="loader">
+                    <div class="inner one"></div>
+                    <div class="inner two"></div>
+                    <div class="inner three"></div>
+                </div>
+            </section>
+    </div>
+    <script>
+      setTimeout(() => {
+        window.location.href = "/mail"
+      }, 5000);
+    </script>
+</body>
+
+</html>

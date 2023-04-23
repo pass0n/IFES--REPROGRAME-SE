@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/loader.css">
+    <script src = "/static/js/res_mail.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Email Express</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="user-area">
+            <h1>admin,</h1>
+            <p>
+               O site está pronto para uso! Comece a enviar mensagens agora mesmo.
+            </p>
+        </section>
+
+        <section class="form-area">
+            <form id="Form" action="/sendemail" method="POST" autocomplete="off">
+                <input type="email" name="email" placeholder="Para:" required>
+                <input type="text" name="assunto" placeholder="Assunto:" required>
+                <input type="text" name="mensagem" placeholder="Mensagem:" required>
+                <input type="submit" name="send" value="Enviar">
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>

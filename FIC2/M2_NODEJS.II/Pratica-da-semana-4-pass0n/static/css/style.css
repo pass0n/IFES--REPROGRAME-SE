@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;900&family=Montserrat:wght@400;900&display=swap");
+
+:root {
+  --tom-1: #f2f2f2;
+  --tom-2: #a6a6a6;
+  --tom-3: #595959;
+  --tom-4: #262626;
+  --tom-5: #0d0d0d;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container, main {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.user-area {
+  width: 40%;
+  background-color: var(--tom-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 6rem;
+  text-align: center;
+}
+
+.user-area h1 {
+  color: var(--tom-5);
+  font-size: 1.6rem;
+  font-weight: bolder;
+  margin-bottom: 0.4rem;
+}
+
+.user-area p {
+  color: var(--tom-4);
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.form-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--tom-5);
+}
+
+.form-area input:not([type="button"]) {
+  display: block;
+  margin-top: 0.6rem;
+  padding: 0.5rem;
+  background-color: var(--tom-5);
+  border: none;
+  border-bottom: 3px solid var(--tom-3);
+  color: var(--tom-2);
+  width: 350px;
+}
+
+.form-area input[type="submit"] {
+  display: block;
+  width: 80px;
+  margin-top: 0.6rem;
+  cursor: pointer;
+  border: none;
+  padding: 0.3rem;
+  color: var(--tom-2);
+  background-color: var(--tom-3);
+}
+
+.form-area input:focus {
+  outline: none;
+  color: var(--tom-1);
+}

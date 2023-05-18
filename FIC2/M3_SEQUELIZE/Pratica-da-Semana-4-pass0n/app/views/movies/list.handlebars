@@ -1,0 +1,42 @@
+<h1 class="text-center my-3">Lista de Todos os filmes Preferidos</h1>
+
+<table class="table">
+  <div class="row">
+    <div class="col-12">
+      <thead>
+        <th>Código do filme</th>
+        <th>Título</th>
+        <th>Categoria</th>
+        <th>Genêro</th>
+        <th>Link para visualizar</th>
+      </thead>
+      <tbody>
+        {{#each movie}}
+          <tr>
+            <th>{{this.id_movie}}</th>
+            <th>{{this.title}}</th>
+            <th>{{this.category}}</th>
+            <th>{{this.genre}}</th>
+            <th>
+              <a href="{{this.synopsis}}">Visualizar Sinopse</a>
+            </th>
+            <th>
+              <a class="btn btn-primary" href="/update/{{this.id_movie}}">Editar</a>
+            </th>
+            <th>
+              <form class="borde-0 m-0" action="/remove" method="POST">
+                <input type="hidden" name="id_movie" value={{this.id_movie}} />
+                <input
+                  class="btn btn-dark"
+                  type="submit"
+                  value="Excluir"
+                  name="Excluir"
+                />
+              </form>
+            </th>
+          </tr>
+        {{/each}}
+      </tbody>
+    </div>
+  </div>
+</table>

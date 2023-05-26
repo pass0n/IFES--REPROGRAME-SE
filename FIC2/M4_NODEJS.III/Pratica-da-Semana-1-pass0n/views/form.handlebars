@@ -1,0 +1,20 @@
+<h1 class="text-center my-3">Cadastro de estados</h1>
+<h2 class="text-center mb-5">Quantidade de Itens Cadastrados: {{quantidade}}</h2>
+  <form action="/estado/cadastrar" method="post">
+    <div class="row w-50 d-block m-auto g-3">
+      <div class="col-12">
+        <label class="form-label" for="cidade">Nome do estado:</label>
+        <input
+        class="form-control"
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="Digite o nome do estado"
+        />
+      </div>
+      <div>
+        <input class="btn btn-primary my-3" type="submit" value="Cadastrar estado" />
+        <a class="btn btn-secondary my-3" href="/all">Listar estados</a>
+      </div>
+    </div>
+  </form>

@@ -1,0 +1,38 @@
+<h1 class="text-center my-3">Lista de Livros</h1>
+<table class="table">
+  <div class="row">
+    <div class="col-12">
+      <thead>
+        <th>Código do livro</th>
+        <th>Título</th>
+        <th>Autor</th>
+        <th>Preço</th>
+        <th>Capa</th>
+      </thead>
+      <tbody>
+        {{#each livro}}
+          <tr>
+            <th>{{this.id_livro}}</th>
+            <th>{{this.titulo}}</th>
+            <th>{{this.autor}}</th>
+            <th>{{this.preco}}</th>
+            <th><a href="{{this.link}}"><img class="img-fluid" style="width: 5rem" src="{{this.link}}"></a></th>
+            <th>
+              <a
+                href="/livro/{{this.id_livro}}/{{this.titulo}}/{{this.autor}}/{{this.preco}}/{{this.link}}"
+              >
+                Editar<i class="bi bi-pencil-square"></i>
+              </a>
+            </th>
+            <th>
+              <form class="borde-0 m-0" action="/livro/Delete" method="POST">
+                <input type="hidden" name="id_livro" value={{this.id_livro}} />
+                <input type="submit" value="Excluir" name="Excluir" />
+              </form>
+            </th>
+          </tr>
+        {{/each}}
+      </tbody>
+    </div>
+  </div>
+</table>

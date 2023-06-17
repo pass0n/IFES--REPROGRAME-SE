@@ -1,0 +1,53 @@
+<h1 class="text-center my-3">Atualizar Livro: {{livro.titulo}}</h1>
+<form action="/livro/Update" method="post">
+  <input type="hidden" name="id_livro" value="{{livro.id_livro}}" />
+  <div class="row w-50 d-block m-auto g-3">
+    <div class="col-12">
+      <label class="form-label" for="titulo">Titulo:</label>
+      <input
+        class="form-control"
+        type="text"
+        name="titulo"
+        id="titulo"
+        value="{{livro.titulo}}"
+      />
+    </div>
+    <div class="col-12">
+      <label class="form-label" for="autor">Autor:</label>
+      <input
+        class="form-control"
+        type="text"
+        name="autor"
+        id="autor"
+        value="{{livro.autor}}"
+      />
+    </div>
+    <div class="col-12">
+      <label class="form-label" for="preco">Preço:</label>
+      <input
+        class="form-control"
+        type="text"
+        name="preco"
+        id="preco"
+        value="{{livro.preco}}"
+      />
+    </div>
+    <div class="col-12">
+      <label class="form-label" for="link">Link:</label>
+      <input
+        class="form-control"
+        type="text"
+        name="link"
+        id="link"
+        value="{{livro.link}}"
+      />
+    </div>
+    <div>
+      <input
+        class="btn btn-primary my-3"
+        type="submit"
+        value="Atualizar livro"
+      />
+    </div>
+  </div>
+</form>

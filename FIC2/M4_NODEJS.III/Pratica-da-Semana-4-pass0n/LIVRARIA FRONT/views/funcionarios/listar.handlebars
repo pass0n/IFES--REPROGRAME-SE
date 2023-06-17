@@ -1,0 +1,40 @@
+<h1 class="text-center my-3">Lista de Funcionários</h1>
+<table class="table">
+  <div class="row">
+    <div class="col-12">
+      <thead>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>Senha</th>
+      </thead>
+      <tbody>
+        {{#each funcionario}}
+          <tr>
+            <th>{{this.id_funcionario}}</th>
+            <th>{{this.nome}}</th>
+            <th>{{this.email}}</th>
+            <th>{{this.senha}}</th>
+            <th>
+              <a
+                href="/funcionario/{{this.id_funcionario}}/{{this.nome}}/{{this.email}}/{{this.senha}}"
+              >
+                Editar<i class="bi bi-pencil-square"></i>
+              </a>
+            </th>
+            <th>
+              <form class="borde-0 m-0" action="/funcionario/Delete" method="POST">
+                <input
+                  type="hidden"
+                  name="id_funcionario"
+                  value={{this.id_funcionario}}
+                />
+                <input type="submit" value="Excluir" name="Excluir" />
+              </form>
+            </th>
+          </tr>
+        {{/each}}
+      </tbody>
+    </div>
+  </div>
+</table>
